@@ -1,0 +1,16 @@
+{
+  "name": "aboutme",
+  "version": "1.0.0",
+  "description": "This is my portfolio project ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio project",
+    "conventional commits",
+    "github pages"
+  ],
+  "author": "xolani maphumulo",
+  "license": "ISC"
+}
