@@ -1,13 +1,13 @@
 [
   {
     "name": "Portfolio Project",
-    "stack": ["js", "jest", "html", "git", "css", "conventional-commits"],
+    "stack": ["js", "html", "git", "css", "conventional-commits"],
     "link": "https://github.com/xolanimaphumulo/xolanimaphumulo.github.io",
     "level": "easy"
   },
   {
     "name": "Solutions to LeetCode Problems - 3 ",
-    "stack": ["js", "jest", "html", "git", "css"],
+    "stack": ["js", "jest", "git"],
     "link": "https://github.com/xolanimaphumulo/leetCodeAnswers",
     "level": "hard"
   }
