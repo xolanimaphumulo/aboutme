@@ -6,7 +6,10 @@
 }
 html,
 body {
-  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 body {
   display: flex;
@@ -36,12 +39,107 @@ h2 {
   font-weight: bold;
 }
 
+.published-repos {
+  font-size: xx-large;
+  text-align: center;
+  height: 100px;
+  color: black;
+  font-weight: 500;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: underline;
+}
+
+#repos-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#repos-container > ul {
+  list-style-type: none;
+}
+.repos-container-ul {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-column-gap: 20px;
+  grid-row-gap: 1px;
+  flex-direction: row;
+  width: 100%;
+}
+.repo {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  height: 300px;
+  box-shadow: 0 1.5px 5px rgb(0 0 0 / 0.2);
+  align-items: center;
+  justify-content: center;
+  margin: 8px;
+  padding: 4px;
+}
+.repo > p {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  max-height: 50px;
+  overflow-y: hidden;
+  text-align: center;
+  font-size: large;
+  color: black;
+  font-weight: bolder;
+  font-family: "arial";
+}
+.repo > a {
+  color: blue;
+  font-size: medium;
+  height: 40px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.repo > ul {
+  display: grid;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.stack-container {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  display: grid;
+  grid-column-gap: 1px;
+  grid-template-columns: repeat(3, auto);
+  grid-column-gap: 2px;
+  grid-row-gap: 1px;
+  padding: 2px;
+}
+
+.stack-item {
+  min-width: 20px;
+  height: 40px;
+  background: #e9e4e4;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+  font-size: medium;
+  font-weight: 600;
+  padding: 2px;
+}
+
 @media screen and (max-width: 768px) {
-  body {
-    display: block;
+  .repos-container-ul {
+    display: flex;
+    flex-direction: column;
   }
-  .container {
-    margin-top: 70px;
-    margin-bottom: 70px;
+  .name-surname {
+    font-size: large;
   }
 }
